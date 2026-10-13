@@ -1,18 +1,21 @@
-import { useState } from 'react'
-import heroImg from './assets/hero.png'
-import reactLogo from './assets/react.svg'
-import viteLogo from './assets/vite.svg'
 import './App.css'
 import ExemploUseEffect from './components/ExemploUseEffect'
 import Timer from './components/Timer'
+import { MeuContextoProvider } from './contexts/MeuContexto'
+import ComponenteFilho from './components/ComponenteFilho'
+import ValorDoContexto from './components/ValorDoContexto'
 
-function App() {
-  const [count, setCount] = useState(0)
+
+function App() { 
 
   return (
     <>
     <ExemploUseEffect/>
-    <Timer/>  
+    <Timer/>
+    <MeuContextoProvider>
+      <ComponenteFilho />
+      <ValorDoContexto />
+    </MeuContextoProvider>  
     </>
   )
 }
