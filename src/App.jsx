@@ -4,6 +4,7 @@ import Timer from './components/Timer'
 import { MeuContextoProvider } from './contexts/MeuContexto'
 import ComponenteFilho from './components/ComponenteFilho'
 import ValorDoContexto from './components/ValorDoContexto'
+import Contador from './components/Contador'
 
 
 function App() { 
@@ -15,7 +16,8 @@ function App() {
     <MeuContextoProvider>
       <ComponenteFilho />
       <ValorDoContexto />
-    </MeuContextoProvider>  
+    </MeuContextoProvider> 
+    <Contador/> 
     </>
   )
 }
