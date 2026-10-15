@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useState, useContext } from 'react'
 import { MeuContexto } from '../contexts/MeuContexto'
 
 const ComponenteFilho = () => {
@@ -8,7 +8,7 @@ const ComponenteFilho = () => {
   return (
     <div>
         <p>{mensagem}</p>
-        <button onclick={() => setMensagem("Nova mensagem")}>
+        <button onClick={() => setMensagem("Trickster!")}>
             Atualizar Mensagem
         </button>
     </div>

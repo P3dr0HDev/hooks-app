@@ -13,11 +13,11 @@ function App() {
     <>
     <ExemploUseEffect/>
     <Timer/>
+    <Contador/>
     <MeuContextoProvider>
       <ComponenteFilho />
       <ValorDoContexto />
     </MeuContextoProvider> 
-    <Contador/> 
     </>
   )
 }

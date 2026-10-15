@@ -6,7 +6,7 @@ const ValorDoContexto = () => {
     const { mensagem } = useContext(MeuContexto);
 
   return (
-    <div>O valor do COntexto é: {mensagem}</div>
+    <div>O valor do Contexto é: {mensagem}</div>
   )
 }
 
